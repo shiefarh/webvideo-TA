@@ -27,22 +27,54 @@
     </header>
     
     <main>
-        <h3>Use a client to accesses the content. The clien accesses the contents with different internet connection speed/bandwidth. The video is same, only the origin server configuration is different.</h3>
+        <h3>We try to access both of CDN and NoCDN Videos by using different internet speed, then we test the QoS of each videos and see the difference</h3>
     <div class="nocdn-container">
         <h5>Contents that store in storage with No CDN</h5>
         <div class="video-container">
+            <p>Low Speed</p>
             <video
                 class="video-js vjs-theme-fantasy"
                 controls
                 preload="auto"
                 data-setup="{}" >
-                <source src="https://tugasakhirvideobucket.s3.ap-southeast-1.amazonaws.com/sc1_720p.mp4" type="video/mp4" />
+                <source src="https://nocdnvideocontent.s3.amazonaws.com/lowtest.mp4" type="video/mp4" />
                 <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider upgrading to a
                 web browser that
                 <a href="https://videojs.com/html5-video-support/" target="_blank"
-                    >supports HTML5 video</a
-                >
+                    >supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+        <div class="video-container">
+            <p>Medium Speed</p>
+            <video
+                class="video-js vjs-theme-fantasy"
+                controls
+                preload="auto"
+                data-setup="{}" >
+                <source src="https://nocdnvideocontent.s3.amazonaws.com/medtest.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+        <div class="video-container">
+            <p>High Speed</p>
+            <video
+                class="video-js vjs-theme-fantasy"
+                controls
+                preload="auto"
+                data-setup="{}" >
+                <source src="https://nocdnvideocontent.s3.amazonaws.com/hightest.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a>
                 </p>
             </video>
         </div>
@@ -51,18 +83,50 @@
     <div class="cdn-container">
         <h5>Contents that store in storage with CDN</h5>
         <div class="video-container">
+            <p>Low Speed</p>
             <video
                 class="video-js vjs-theme-fantasy"
                 controls
                 preload="auto"
                 data-setup="{}" >
-                <source src="https://dz5o4k6fnl5vs.cloudfront.net/sc1_720p.mp4" type="video/mp4" />
+                <source src="https://dz5o4k6fnl5vs.cloudfront.net/lowtest.mp4" type="video/mp4" />
                 <p class="vjs-no-js">
                 To view this video please enable JavaScript, and consider upgrading to a
                 web browser that
                 <a href="https://videojs.com/html5-video-support/" target="_blank"
-                    >supports HTML5 video</a
-                >
+                    >supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+        <div class="video-container">
+            <p>Medium Speed</p>
+            <video
+                class="video-js vjs-theme-fantasy"
+                controls
+                preload="auto"
+                data-setup="{}" >
+                <source src="https://dz5o4k6fnl5vs.cloudfront.net/medtest.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a>
+                </p>
+            </video>
+        </div>
+        <div class="video-container">
+            <p>High Speed</p>
+            <video
+                class="video-js vjs-theme-fantasy"
+                controls
+                preload="auto"
+                data-setup="{}" >
+                <source src="https://dz5o4k6fnl5vs.cloudfront.net/hightest.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a href="https://videojs.com/html5-video-support/" target="_blank"
+                    >supports HTML5 video</a>
                 </p>
             </video>
         </div>
